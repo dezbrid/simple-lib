@@ -98,3 +98,4 @@ yarn add -D react-dom react @types/react-dom @types/react
 yarn build
 ```
 
+git commit -m "first commit"
