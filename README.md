@@ -113,8 +113,7 @@ yarn build
 ```
 
 ---
-
-## Don't commit the changes to this file!
+ Don't commit the changes to this file!
 
 1. add in package.json
 
