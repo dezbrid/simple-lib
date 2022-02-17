@@ -97,5 +97,3 @@ yarn add -D react-dom react @types/react-dom @types/react
 ```bash
 yarn build
 ```
-
-git commit -m "first commit"
