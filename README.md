@@ -97,3 +97,48 @@ yarn add -D react-dom react @types/react-dom @types/react
 ```bash
 yarn build
 ```
+
+## Publish in your Git
+### Prerequisites
+1. We need to generate a [personal access token](https://github.com/settings/tokens/new) on Github in your account with  `  write:packages and  read:packages` permissions. Make sure to copy your new personal access token now. You won’t be able to see it again! For more information, you can check [Github documentation](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
+ 2. Then, create .npmrc file in your root proyect: 
+```txt
+  //npm.pkg.github.com/:_authToken=TOKEN
+ @USER_GITHUB:registry=https://npm.pkg.github.com/
+ 
+ ```
+---
+Don't commit the changes to this file!
+---
+
+1. add in package.json
+
+```json
+"publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "login": "npm login --scope=@your_user_github --registry=https://npm.pkg.github.com"
+  }
+```
+2. login in terminal  with npm
+```bash
+npm login
+Username: 
+```
+
+## Publish in yarn or npm
+
+### Prerequisites
+
+create account in  [npmjs](https://www.npmjs.com/signup)
+
+1. login in terminal use yarn or npm
+
+```bash
+yarn login
+question npm username: "your username"
+question npm email: "your email"
+```
+
+2. publish in yarn

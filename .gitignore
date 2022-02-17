@@ -13,6 +13,7 @@
 /example/node_modules
 # production
 /build
+.npmrc
 
 # misc
 .DS_Store

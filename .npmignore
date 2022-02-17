@@ -1,0 +1,7 @@
+src
+tests
+documentation
+.eslintignore
+.eslintrc.js
+jest.config.js
+pull_request_template.md
